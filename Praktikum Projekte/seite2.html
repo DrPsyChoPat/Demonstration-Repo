@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Hier steht der Text der in Suchmaschinen als kurze Beschreibung dargestellt wird.">
+<meta name="keywords" content="Schlagwörter, html, lernen">
+<meta name="robots" content="noIndex, noFollow"> <!-- Oder Index, Follow um Zugriff zu erlauben. -->
+<meta name="author" content="Patrick W.">
+<title>HTML lernen zu lernen</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<h1>Einmalig!</h1> <!-- Nur einmal pro SEITE -->
+<h2>Nicht so wichtig...</h2>
+<p>hier kann ein Text stehen <b>FETT</b> <i>KURSIV</i> <del>DURCH</del> Test-<br>Zweck
+</p>
+<hr>
+<a href="seite1.html">Link</a>
+<header>
+<table border="1">
+	<tr	style="background-color: aquamarine">
+		<th>Sonderzeichen</th>
+		<th>Ausgabe</th>
+	</tr>
+	<tr>
+		<td>&copy;</td>
+		<td>Copyright-Ziechen</td>
+	</tr>
+	<tr>
+		<td>&reg;</td>
+		<td>eingetragene Handelsmarke</td>
+	</tr>
+	<tr>
+		<td>&bull;</td>
+		<td>ausgefüllter Kreis</td>
+	</tr>
+	<tr>
+		<td>&amp;</td>
+		<td>das & Zeichen</td>
+	</tr>
+	<tr>
+		<td>&auml; &uuml; &ouml;</td>
+		<td>Umlaute</td>
+	</tr>
+		<tr>
+		<td>90m<sub>2</sub> oder 90m<sup>2</sup></td>
+		<td>hochgestellt/tiefergestellt</td>
+	</tr>
+
+</table>
+
+<table border="1">
+<thead>
+	<tr>
+		<td>Zelle1 Head</td>
+		<td rowspan="2">Zelle2 Head</td>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<td>Zelle3 Body</td>
+	</tr>
+</tbody>
+<tfoot>
+	<tr>
+		<td colspan="2">Zelle5 Foot</td>
+		<td>Zelle6 Foot</td>	
+	</tr>
+</tfoot>
+</table>
+
+</header>
+<nav>
+<ul>
+<li>Listenpunkt1</li>
+<li>Listenpunkt2</li>
+<li>Listenpunkt3</li>
+</ul>
+<ol type="I" start="5">
+<li>Liste1</li>
+<li>Liste2</li>
+<li>Liste3</li>
+</ol>
+<ul>
+<li>HTML Grundlagen</li>
+<li>Styling
+	<ul>
+	<li>styling mit CSS Dateien</li>
+	<li>styling mit HTML</li>
+	</ul>
+</li><!--Endung Styling-->
+</ul>
+</nav>
+<main>
+<div id="div1">Hallo1
+<div id="div2">Hallo2
+</div>
+</div>
+</main>
+<footer></footer>
+<script>
+document.getElementById('div2').innerHTML = 'Javascript';
+document.getElementsByTagName('table')[0].style.color='gray';
+</script>
+</body>
+</html>
